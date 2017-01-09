@@ -5,11 +5,17 @@ Get Dcard_api data with R language
 
 ---
 
+[Dcard](https://www.dcard.tw/f)
+
 popular=
 *true = 熱門文章
 *false = 最新文章
 
 ---
+
+###以下根據你想抓的資料對程式碼url的修改
+僅看資料去除 `&before=`
+
 
 *感情
 url = https://www.dcard.tw/_api/forums/relationship/posts?popular=false&before=
