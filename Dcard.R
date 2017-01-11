@@ -6,7 +6,7 @@ Crawler <- function() {
 	Dcard <<-fromJSON("https://www.dcard.tw/_api/forums/whysoserious/posts?popular=false")
 
 	for( i in c( 1 : 3 ) ) {  #爬幾頁
-		id = Dcard[30,1];
+		id = Dcard[30*i,1];
 		temp_url = paste( url, id, sep = "" );
 		Dcard <<- rbind( Dcard, fromJSON(temp_url) );
 		
